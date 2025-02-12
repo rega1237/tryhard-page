@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-naranja: #EFA975;
+  --color-marron: #9C714B;
+  --color-crema: #FFEFE4;
+  --color-cremaobs: #F1DCC0;
+  --font-poppins: "Poppins", serif;
+}
+
+:root {
+  margin: 0;
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.satisfy {
+  font-family: "Satisfy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins {
+  font-family: "Poppins", serif;
+}
