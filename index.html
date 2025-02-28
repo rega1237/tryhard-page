@@ -10,14 +10,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Try Hard Tribe</title>
   </head>
   <body>
-    <nav class="bg-crema px-8 pt-8">
-      <img class="w-[150px]" src="./src/assets/images/logo_try_hard.png" />
+    <nav class="bg-crema pt-3">
+      <div class="flex flex-col items-center">
+        <img class="w-[200px]" src="./src/assets/images/logo.png" />
+        <ul class="gap-5 items-center hidden lg:flex">
+          <li>
+            <a class="font-poppins font-bold hover:text-naranja cursor-pointer"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a class="font-poppins font-bold hover:text-naranja cursor-pointer"
+              >¿Como funciona el reto?</a
+            >
+          </li>
+          <li>
+            <a class="font-poppins font-bold hover:text-naranja cursor-pointer"
+              >Unete al RETO</a
+            >
+          </li>
+          <li>
+            <a class="font-poppins font-bold hover:text-naranja cursor-pointer"
+              >¡Conoceme!</a
+            >
+          </li>
+          <li>
+            <a class="font-poppins font-bold hover:text-naranja cursor-pointer"
+              >Testimonios</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-    <section class="flex flex-col bg-crema pt-[100px] lg:pt-0 lg:flex-row">
+
+    <section class="flex flex-col bg-crema lg:flex-row">
       <div
         class="flex flex-col flex-1 satisfy mx-auto justify-center items-center lg:items-end"
       >
@@ -26,14 +60,15 @@
           #Challenge
         </h2>
         <a
-          class="bg-naranja font-poppins font-extrabold p-4 rounded-md inline-block mt-9 text-crema cursor-pointer hover:bg-marron hover:text-cremaobs"
+          href="#form"
+          class="bg-naranja font-poppins font-extrabold p-4 rounded-md inline-block mt-9 text-cremaobs cursor-pointer hover:bg-marron hover:text-cremaobs"
           >Quiero unirme al reto</a
         >
       </div>
 
       <div class="flex flex-1 justify-center pt-5">
         <img
-          class="sm:w-[400px] lg:w-full drop-shadow-lg"
+          class="w-[200px] lg:w-[400px] drop-shadow-lg"
           src="./src/assets/images/header.png"
         />
       </div>
@@ -300,7 +335,8 @@
                   />
                 </span>
                 <p class="text-2xl md:text-xl">
-                  Herramientas descargables (guías, calendarios, trackers de progreso).
+                  Herramientas descargables (guías, calendarios, trackers de
+                  progreso).
                 </p>
               </li>
               <li class="flex items-start gap-2">
@@ -324,7 +360,8 @@
                   />
                 </span>
                 <p class="text-2xl md:text-xl">
-                  Acceso a contenido exclusivo (webinars, eBooks, videos educativos).
+                  Acceso a contenido exclusivo (webinars, eBooks, videos
+                  educativos).
                 </p>
               </li>
               <li class="flex items-start gap-2">
@@ -336,7 +373,8 @@
                   />
                 </span>
                 <p class="text-2xl md:text-xl">
-                  Comunidad activa para conectar con personas con objetivos similares.
+                  Comunidad activa para conectar con personas con objetivos
+                  similares.
                 </p>
               </li>
               <li class="flex items-start gap-2">
@@ -348,17 +386,547 @@
                   />
                 </span>
                 <p class="text-2xl md:text-xl">
-                  Garantía de satisfacción: si no ves resultados, te ayudamos a ajustar el plan.
+                  Garantía de satisfacción: si no ves resultados, te ayudamos a
+                  ajustar el plan.
                 </p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="w-[80%] mx-auto lg:w-full md:col-span-2 flex flex-col justify-center">
-          <h2 class="font-poppins font-bold text-5xl text-center">¿Y tu que esperas para unirte a la tribu? <span class="inline-block pt-6 text-naranja text-8xl satisfy md:text-9xl">Try Hard</span></h2>
+        <div
+          class="w-[80%] mx-auto lg:w-full md:col-span-2 flex flex-col justify-center"
+        >
+          <h2 class="font-poppins font-bold text-5xl text-center">
+            ¿Y tu que esperas para unirte a la tribu?
+            <span
+              class="inline-block pt-6 text-naranja text-8xl satisfy md:text-9xl"
+              >Try Hard</span
+            >
+          </h2>
         </div>
       </div>
     </section>
+
+    <section id="form" class="bg-crema">
+      <div class="container mx-auto pt-7">
+        <div class="flex flex-col-reverse lg:flex-row gap-8 items-center">
+          <!-- Left side - Image -->
+          <div class="flex-1">
+            <img
+              src="./src/assets/images/contact.png"
+              alt="Contact image"
+              class="max-w-[200px] lg:max-w-[400px] mx-auto drop-shadow-lg rounded-lg"
+            />
+          </div>
+
+          <!-- Right side - Form -->
+          <div class="flex-1">
+            <div class="w-[90%] mx-auto md:w-full">
+              <div class="py-8 text-center">
+                <h2 class="text-poppins text-white text-5xl font-bold">
+                  Registrate al reto y unete a la
+                </h2>
+                <h2
+                  class="satisfy text-naranja text-7xl font-bold tracking-widest mt-5"
+                >
+                  Tribu Try Hard
+                </h2>
+              </div>
+              <form class="max-w-[600px] mx-auto space-y-6">
+                <div class="space-y-4">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-white text-xl font-poppins mb-2"
+                      >Nombre</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="w-full px-4 py-3 rounded-lg bg-white border border-marron focus:outline-none focus:border-naranja"
+                      placeholder="Ingresa tu nombre"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="phone"
+                      class="block text-white text-xl font-poppins mb-2"
+                      >Teléfono</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="w-full px-4 py-3 rounded-lg bg-white border border-marron focus:outline-none focus:border-naranja"
+                      placeholder="Ingresa tu teléfono"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-white text-xl font-poppins mb-2"
+                      >Correo</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="w-full px-4 py-3 rounded-lg bg-white border border-marron focus:outline-none focus:border-naranja"
+                      placeholder="Ingresa tu correo"
+                      required
+                    />
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-naranja text-cremaobs font-bold py-3 px-6 rounded-lg hover:bg-marron transition-colors duration-300 cursor-pointer"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cremaobs pt-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+          <!-- Left side - Text content -->
+          <div class="flex-1 space-y-6">
+            <div class="w-[80%] mx-auto">
+              <h2 class="text-5xl font-poppins font-bold text-marron">
+                Conoce a tu entrenadora
+                <span class="satisfy text-naranja block mt-2"
+                  >María Acosta</span
+                >
+              </h2>
+              <div class="space-y-4 text-xl">
+                <p>
+                  Con más de 6 años transformando vidas a través del fitness y
+                  la nutrición, María ha ayudado a cientos de personas a
+                  alcanzar sus metas de salud y bienestar.
+                </p>
+                <p>
+                  Certificada en nutrición deportiva y entrenamiento funcional,
+                  su enfoque va más allá del ejercicio físico. María cree en un
+                  cambio integral que incluye hábitos saludables, mentalidad
+                  positiva y un estilo de vida sostenible.
+                </p>
+                <p>
+                  Su pasión por ayudar a otros nació de su propia transformación
+                  personal, lo que le permite conectar de manera única con cada
+                  miembro de la tribu TryHard. María no solo es una entrenadora,
+                  es una mentora que te guiará y apoyará en cada paso de tu
+                  viaje.
+                </p>
+                <p class="text-naranja font-semibold">
+                  "Mi misión es demostrarte que los límites solo existen en tu
+                  mente. Con dedicación y el apoyo adecuado, cualquier meta es
+                  alcanzable."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side - Image -->
+          <div class="flex-1">
+            <img
+              src="./src/assets/images/trainer.png"
+              alt="María Acosta - Entrenadora"
+              class="max-w-[200px] md:max-w-[300px] mx-auto drop-shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-crema">
+      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2
+          class="text-5xl font-poppins font-bold text-marron text-center mb-12"
+        >
+          Lo que dice la <span class="satisfy text-naranja">Tribu</span>
+        </h2>
+
+        <div class="mt-8">
+          <div id="keen-slider" class="keen-slider">
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-cremaobs p-6 shadow-xs sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-naranja">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Ana García
+                    </p>
+                    <p class="text-sm text-naranja">-15kg en 6 meses</p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  "El programa de María cambió mi vida por completo. No solo
+                  perdí peso, sino que gané confianza y energía. La comunidad es
+                  increíble y el apoyo constante hace toda la diferencia."
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-cremaobs p-6 shadow-xs sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-naranja">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Carlos Ruiz
+                    </p>
+                    <p class="text-sm text-naranja">+8kg músculo en 4 meses</p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  "Las rutinas personalizadas y el plan nutricional son
+                  excelentes. María realmente se preocupa por cada uno de
+                  nosotros y nos ayuda a alcanzar nuestras metas de forma
+                  saludable."
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-cremaobs p-6 shadow-xs sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-naranja">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Laura Méndez
+                    </p>
+                    <p class="text-sm text-naranja">Transformación total</p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  "Más que un programa de ejercicios, es un cambio de estilo de
+                  vida. La motivación diaria y los tips de nutrición me ayudaron
+                  a mantenerme enfocada en mis objetivos."
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-cremaobs p-6 shadow-xs sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-naranja">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Miguel Torres
+                    </p>
+                    <p class="text-sm text-naranja">10kg en 3 meses</p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  "El ambiente de la comunidad es increíble. Todos nos apoyamos
+                  mutuamente y María siempre está ahí para resolver dudas y
+                  mantenernos motivados."
+                </p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="mt-6 flex items-center justify-center gap-4">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="text-gray-600 transition-colors hover:text-gray-900"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <p class="w-16 text-center text-sm text-gray-700">
+              <span id="keen-slider-active"></span>
+              /
+              <span id="keen-slider-count"></span>
+            </p>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="text-gray-600 transition-colors hover:text-gray-900"
+            >
+              <svg
+                class="size-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
