@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-naranja: #EFA975;
-  --color-marron: #9C714B;
-  --color-crema: #FFEFE4;
-  --color-cremaobs: #F1DCC0;
+  --color-naranja: #EE7828;
+  --color-marron: #806D61;
+  --color-crema: #C5BAAA;
+  --color-cremaobs: #FFEECB;
   --font-poppins: "Poppins", serif;
 }
 
